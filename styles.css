@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+    background-color: #001123;
+    color: white;
+}
+
+.layout {
+    height: 90svh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.card {
+    margin: 150px 25px 0 25px;
+    font-size: 250%;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.card span {
+    color: #007aff;
+    opacity: 0;
+    font-size: 75%;
+}
+
+.card.shown span {
+    opacity: 1;
+}
+
+#flag {
+    font-size: 50%;
+    display: none;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    all: unset;
+    text-align: center;
+    font-size: 120%;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 20px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: #003064;
+}
+
+button.next {
+    background-color: #007aff;
+}
+
+.pool {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+}
+
+.pool button {
+    margin: 0;
+    font-size: 100%;
+    padding: 10px 20px;
+    flex: 1;
+    background-color: #0000;
+    color: #0052a9;
+    font-weight: 400;
+}
+
+.pool button.selected {
+    color: #7fbdff;
+    font-weight: 500;
+}
